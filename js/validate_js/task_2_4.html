@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="task_2_4.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT</title>
+</head>
+<body>
+<div class="board">
+    <form class="wrapper" action="#" id="form" name="form" novalidate>
+        <div class="content">
+            <div class="h1">
+            <h1>Create Account</h1>
+        </div>
+            <div class="info">
+                <div class="name_ser">
+                    <div class="name inputBox">
+                        <label class="q">First name</label>
+                        <input type="text" placeholder=" enter your first name" id="first" class="inputs">
+                    </div>
+                    <div class="name inputBox">
+                        <label class="w">Last name</label>
+                        <input type="text" placeholder=" enter your last name" id="last" class="inputs">
+                    </div>
+                </div>
+                <div class="email inputBox">
+                    <label class="e">Email*</label>
+                    <input class="email inputs emails" type="email" placeholder=" enter your email">
+                </div>
+                <div class="name_ser">
+                    <div class="name inputBox">
+                        <label class="r">Password (от 8-ми)</label>
+                        <input type="password" placeholder=" enter your password" id="pass" class="inputs" onsubmit="toggleType();">
+                    </div>
+                    <div class="name conf__pass inputBox">
+                        <label class="t">Confirm Password (от 8-ми)</label>
+                        <input type="password" placeholder=" enter your password again" id="pass-again" class="inputs">
+                    </div>
+                </div>
+                <div class="gender_hobbies">
+                    <div class="gender">
+                        <label>Gender:</label>
+                        <div class="radio">
+                        <input type="radio" class="radio">Male
+                        <input type="radio" class="radio">Female
+                    </div>
+                    </div>
+                    <div class="year inputBox">
+                        <div class="name conf__pass">
+                            <label class="u">Date of Birth (m/d/yy)</label>
+                            <input type="text"  id="year" class="inputs">
+                        </div>
+                    </div>
+                </div>
+                <div class="Source__income">
+                    <div class="Source">
+                        <div>
+                        <label>Source of Income</label>
+                        <select>
+                            <option>Employed</option>
+                            <option>Employer</option>
+                        </select>
+                    </div>
+                    <div class="Income">
+                        <div class="range">
+                        <label>Income</label>
+                        <input type="range" min="1" max="10" step="0.01" class="range">
+                        <div class="k">20k</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="file__age">
+                <div class="file">
+                    <label>Upload Profile Picture</label>
+                    <input type="file" class="file">
+                </div>
+                <div class="Age">
+                    <label class="y">Age (от 18-ти)</label>
+                    <input type="text" value="18" id="age">
+                </div>
+            </div>
+            <div class="text">
+                <div class="Bio">
+                    <label>Bio</label>
+                    <textarea></textarea>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <button class="create" type="submit">Create</button>
+        </div>
+    </div>
+
+</form>
+</div>
+<script src="task_2_4.js"></script>
+</body>
+</html>
